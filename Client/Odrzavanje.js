@@ -2,7 +2,7 @@ import { Kompanija } from "./Kompanija.js";
 import { Korisnik } from "./Korisnik.js";
 
 export class Odrzavanje {
-    constructor(id, imeTribine,datum, vreme, mesto, idKompanije) {
+    constructor(id, imeTribine, datum, vreme, mesto, idKompanije) {
         this.id = id;
         this.imeTribine = imeTribine;
         this.vreme = vreme;

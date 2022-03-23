@@ -14,7 +14,7 @@ fetch("https://localhost:5001/Kompanija/Kompanije").then(p => {
                     divb.onclick = (ev) => {
                         let listaTribina = [];
                         element.tribine.forEach( obj => {
-                            let f = new Tribina(null,obj.tribina.naziv,obj.film.id);
+                            let f = new Tribina(null,obj.tribina.naziv,obj.tribina.id);
                             listaTribina.push(f);
                         });
 

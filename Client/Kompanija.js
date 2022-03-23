@@ -65,10 +65,10 @@ export class Kompanija {
 
     dodajUTabelu(tabela, el) {
         var tr = document.createElement("tr");
-        tr.className = "filmTabela";
+        tr.className = "tribinaTabela";
 
         var td = document.createElement("td");
-        td.className = "filmTabela";
+        td.className = "tribinaTabela";
         td.innerHTML = el;
         tr.appendChild(td);
         tabela.appendChild(tr);
@@ -121,7 +121,7 @@ export class Kompanija {
         btnPretrazi.innerHTML = "Pretrazi";
         red.appendChild(btnPretrazi);
         btnPretrazi.className = "PretraziDugme";
-        filmForma.appendChild(red);
+        tribinaForma.appendChild(red);
 
 
 
@@ -268,7 +268,7 @@ export class Kompanija {
 
             se4.value = 0;
 
-            let idFilma = film.options[film.selectedIndex].value;
+            let idTribine = tribina.options[tribina.selectedIndex].value;
 
             var url = "https://localhost:5001/Tribina/Odrzavanja/" + idTribine + "/" + this.id;
 
@@ -401,7 +401,7 @@ export class Kompanija {
 
     }
     obrisi(host) {
-        var mestoForma = host.querySelector(".Sala");
+        var mestoForma = host.querySelector(".Mesto");
         if (mestoForma !== null) {
             var rod = mestoForma.parentNode;
             rod.removeChild(mestoForma);
@@ -414,8 +414,8 @@ export class Kompanija {
 
     }
     btnKupiAkreditaciju(korisnik, host, p) {
-        var film = host.querySelector(".comboBox2");
-        if (film.selectedIndex === 0) {
+        var tribina = host.querySelector(".comboBox2");
+        if (tribina.selectedIndex === 0) {
             alert("Nije izabrana tribina");
             return;
         }
@@ -523,7 +523,7 @@ export class Kompanija {
         })
 
         red.className = "AdminRedovi";
-        adminForma.appendChild(red);//dodat prvi cb
+        adminForma.appendChild(red);//dodat prvi
 
         red = document.createElement("div");
         var labela = document.createElement("label");
@@ -537,7 +537,7 @@ export class Kompanija {
         red.appendChild(labela);
         red.appendChild(se3);
         red.className = "AdminRedovi";
-        adminForma.appendChild(red);//dodat drugi cb
+        adminForma.appendChild(red);//dodat drugi
 
         var red2 = document.createElement("div");
         red2.className = "AdminRedovi";
@@ -551,7 +551,7 @@ export class Kompanija {
         se4.appendChild(op);
         red2.appendChild(labela);
         red2.appendChild(se4);
-        adminForma.appendChild(red2);//dodat 3.cb
+        adminForma.appendChild(red2);//dodat 3.
         this.dodajUnos(adminForma);
 
         se.onchange = (ev) => {
