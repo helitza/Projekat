@@ -1,0 +1,415 @@
+.izborKompanije{
+    border-style:solid;
+    border-color:#D28C85;
+    
+    font-style: oblique;
+    color: #D28C85;
+    text-align: center;
+    font-size: 50px;
+    text-transform:uppercase;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    flex-grow: 0 1 auto;
+    align-self:center;
+    margin: 20px;
+  
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #194744;
+}
+
+.KorisnikZaglavljeLabela{
+    font-size: xx-large;
+    font-family: monospace;
+    background-color: #194744;
+    color: #D28C85;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 5px;
+
+    
+    text-decoration:underline ;
+}
+.pozadina{
+    background-image:url('slika.jpg');
+    background-color:#D6BBB0;
+  
+    min-width: 100%;
+    min-height: 100%;
+
+    height: fit-content;
+    
+
+}
+
+.KorisnikZaglavlje{
+    height: 40px;
+    border-style: solid ;
+    border-bottom-color: #D28C85;
+    border-top-color: #D28C85;
+    order:1;
+    
+    background-color: #194744;
+}
+.KorisnikForma{
+    padding: 10px;
+    order: 10;
+    display: flex;
+    flex-direction:column ;
+    border-radius: 10px;
+    border: #194744 2px solid;
+    background-color:#69AD9D;
+    justify-content: space-between;
+    flex-grow: 1;
+  
+}
+.KorisnikRed{
+    height: 1cm;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+
+.KorisnikDugmici{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 2px;
+    flex-grow: 1;
+}
+
+.GlavniKontejner{
+    margin: 50px;
+    padding: 20px;
+    order: 3;
+    background: #69AD9D;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.TribinaRaspored{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 1cm 1cm 1cm 1cm;
+    flex-grow: 1;
+    order: -1;
+}
+.naslovRasporeda{
+    background-color: #194744;
+    height: 1cm;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 100px;
+   
+}
+
+.TribinaZaglavlje{
+
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border:  2px solid #194744;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    flex-grow: 1;
+}
+.TribinaForma{
+    
+   
+    display: flex;
+   /* background-color: lightgrey;*/
+   flex-grow: 1;
+    padding: 5px;
+    
+    align-items: center;
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1cm 1cm 1cm 1cm;
+    
+}
+.Akreditacija{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 1cm 1cm 1cm 1cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-color: #194744;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #D28C85;
+    
+}
+.Naziv{
+    flex-grow: 1;
+    order: 1;
+    height: 150px;
+    text-align: center;
+    font-size: 100px;
+    color: #D28C85;
+    font-style: oblique;
+    background-color: black;
+    
+    
+}
+.AdminForma{
+   flex-grow: 1;
+    padding: 10px;
+    background-color: #69AD9D;
+    border: 2px #194744 solid;
+    border-radius: 10px;
+    margin: 0.5cm;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    
+}
+.AdminLabel{
+   /* flex-grow: 1;*/
+    text-align: center;
+    font-size:large;
+    margin-bottom: 0.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+.KorisnikNaslov{
+   /* flex-grow: 1;*/
+    text-align: center;
+    font-size:large;
+    margin-bottom: 0.5cm;
+}
+.AdminRedovitb{
+    flex-grow: 1;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width:fit-content;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.AdminRedovi{
+    display: flex;
+    
+    width:100%;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+}
+.tbNVremeProj,.tbNDatumProj{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    flex-grow: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.AdminDugmici{
+    display: flex;
+    /*flex-grow: 1;*/
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+
+
+.ZauzetoSediste{
+   /* flex-grow: 1;*/
+    text-align: center;
+    background-color:#B7304F;
+    border-style:  solid;
+    border-radius: 2px;
+    margin: 1px;
+
+    width: 0.5cm;
+  /*  flex: 0 1 auto;*/
+}
+.SlobodnoSediste{
+   /* flex-grow: 1;*/
+    background-color: #145752;
+    border-style:  solid;
+    border-radius: 2px;
+    margin: 1px;
+   
+    width: 0.5cm;
+    text-align: center;
+   /* flex: 0 1 auto;*/
+}
+.RezervisanoSediste{
+   /* flex-grow: 1;*/
+    background-color: #E9D3C0;
+    border-style:  solid;
+    text-align: center;
+    
+    border-radius: 2px;
+    margin: 1px;
+
+    width: 0.5cm;
+ /*   flex: 0 1 auto;*/
+}
+.KupiDugme{
+    margin-right: 15px;
+    justify-content: end;
+    display: flex;
+}
+.KupiKartuDugme{
+  /*  flex-grow: 1;*/
+    color: white;
+    background-color: #194744;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.RedUSali{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.PrikazForma{
+    flex-grow: 1;
+    flex-direction: row;
+}
+.PrikazSale{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+}
+.LabelaSedista{
+    text-align: center;
+    border-radius: 2px;
+    border-style:  solid;
+    border-color:#D28C85;
+    margin: 1px;
+    width: 0.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table,td,tr{
+   
+    flex-grow: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    /*width: fit-content;*/
+    background-color:white;
+    border:2px  solid #D28C85;
+    
+   
+
+}
+table{
+    flex-grow: 1;
+    display: table;
+    width: 100%;
+}
+.TableRow{
+    display: table; 
+}
+th{
+    flex-grow: 1;
+    background-color: #194744;
+    color: white;
+    border: none;
+}
+.tribinaTabela{
+    display: table;
+    flex-grow: 1;
+    border: 1px solid #D28C85;
+    background-color: white;
+    font-size: large;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.TabelaPodaci{
+    display: table;
+    flex-grow: 1;
+    margin-top: 5px;
+}
+table{
+    flex-grow: 1;
+    margin-top: 0.5cm;
+    border-collapse: collapse;
+}
+
+.AkreditacijaRed1,.AkreditacijaRed2,.AkreditacijaRed3{
+   /* flex-grow: 1;*/
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+    
+    font-size: large;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.comboBox,.comboBox2,.comboBox3,.comboBox4,.comboBox5,.comboBox6,.comboBox7,.Admintb{
+    width:40%;
+    flex-grow: 1;
+    height: 1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 10px;
+    
+}
+tbody{
+    flex-grow: 1;
+    width: 100%;
+}
+.KorisnikTextBoxIme,.KorisnikTextBoxPrezime,.KorisnikTextBoxemail,.KorisnikTextBoxsifra,.KorisnikTextBoxIme,.KorisnikTextBoxPrezime{
+    height: 1cm;
+    width: fit-content;
+    margin: 10px;
+    flex-grow: 1;
+}
+.KartaRed0{
+   /* flex-grow: 1;*/
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 3px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    flex-grow: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width: 30%;
+    
+    justify-content: stretch;
+    
+}
+button{
+    
+    height: 1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 10px;
+    background-color: #69AD9D;
+}
