@@ -7,15 +7,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Models;
 
-namespace kompanija.Controllers
+namespace Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class KoristnikController : ControllerBase
+    public class KorisnikController : ControllerBase
     {
         public KompanijaContext Context{get;set;}
 
-        public KoristnikController(KompanijaContext context){
+        public KorisnikController(KompanijaContext context){
             Context=context;
         }
 
