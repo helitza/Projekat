@@ -41,7 +41,7 @@ namespace Controllers
               }  
             if(sifra.Length<8)
               {
-                    return BadRequest("Sifra mora imati minimum 8 karaktera");
+                    return BadRequest("Sifra mora imati najmanje 8 karaktera");
               }  
             var korisnik= await Context.Korisnici.Where(acc=>acc.email==email).FirstOrDefaultAsync();
             if(korisnik!=null)
